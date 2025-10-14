@@ -1,2 +1,3 @@
 # glassify-player
-glassified spotify widget for übersicht
+
+Add folder to /user/Library/Application Support/Übersicht/Widgets/
