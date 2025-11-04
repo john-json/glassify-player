@@ -41,34 +41,47 @@ style: """
   .spotify-widget {
     justify-content: center; 
     position: fixed;
-    top: 6px; 
+    top: 0px; 
     left: 20px;
     padding: 6px 15px;
     font-family: -apple-system, sans-serif;
     font-size: 12px; 
     color: white;
-    background: rgba(28,28,28,0.4);
-    border: 1px solid rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    backdrop-filter: blur(15px) saturate(180%);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.0);
+    text-shadow: 1px 1px 1px black;
   }
-  .spotify-popup { display: none; margin-top: 15px; }
-  .spotify-widget:hover .spotify-popup { display: block; justify-content: center; padding: 10px 10px;}
-  .spotify-widget:hover .spotify-popup img { display: block; size: 12vh; border-radius: 15px; padding-bottom: 10px; }
-  .spotify-controls { display: flex; gap: 20px; justify-content: center; background: none; padding-top: 10px; border-radius: 25px;  }
-  .spotify-widget:hover .spotify-info { margin-top: 15px; font-size: 14px; }
-  .spotify-widget:hover .spotify-popup { display: block; justify-content: center; padding: 10px 10px;}
+  .spotify-popup { display: none; margin-top: 15px; justify-content: center; }
+  .spotify-widget:hover .spotify-popup { 
+  justify-content: center; 
+  padding: 10px; 
+  background: rgba(255,255,255,0.05);
+  border: 2px solid rgba(255,255,255,0.15);
+  border-radius: 50px; }
+  .spotify-widget:hover .spotify-popup img {  display: block; margin: auto; width: 50%; padding: 10px; size: 5vw; border-radius: 35px;}
+  .spotify-controls { 
+  display: flex; 
+  gap: 25px; 
+  justify-content: center; 
+  background:rgba(255,255,255,0.1); 
+  padding-top: 0px; 
+  border-radius: 50px;  }
+  .spotify-widget:hover .spotify-info { font-size: 12px; }
+  .spotify-widget:hover .spotify-popup { 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 35px;
+  display: block; 
+  justify-content: center; 
+  padding: 10px 10px;}
   .spotify-controls button {
-    background: rgba(14,14,14,0.4);
-    border: 1px solid rgba(255,255,255,0.15);
     border-radius: 25px;
     padding: 3px 10px 0px 10px;
     color: white;
     cursor: pointer; 
-    font-size: 16px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 22px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.0);
+    border: 1px solid rgba(255,255,255,0.0);
   }
-  .spotify-controls button:hover {  background: rgba(255,255,255, 0.4); box-shadow: 0 6px 18px rgba(0,0,0,0.22);}
+  .spotify-controls button:hover { padding:0px 14px; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.2);}
 """
