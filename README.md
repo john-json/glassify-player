@@ -2,7 +2,7 @@
 
 A spotity now playing mini player widget 
 for übersicht(https://tracesof.net)
-
+-----------------------------------------------------
 
 
 Add folder to /user/Library/Application Support/Übersicht/Widgets/
